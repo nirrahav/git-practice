@@ -5,9 +5,9 @@ def get_random_joke():
     if response.status_code == 200:
         data = response.json()
         print(f"{data['setup']}")
-        print(f"{data['punchline']}")
+        print(f"👉 {data['punchline']}")
     else:
-        print("Couldn't fetch a joke right now")
+        print("Couldn't fetch a joke right now 😅")
 
 if __name__ == "__main__":
     print("Fetching a random joke for you...\n")
